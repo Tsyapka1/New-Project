@@ -1,9 +1,12 @@
-const arr = [];
+try {
+    console.log(1);
+    console.log(asd);
+    console.log(2);
+} 
+catch (err) {
+    console.log('error');} // Для ловли ошибок!!
 
-function addArray(number) {
-    if(number > 0) {
-        const insertingValue = prompt('Enter string');
-        arr.push(insertingValue);
-        addArray(number - 1)
-    };
-} //Задача на рекурсию для добавления в массив
+
+    finally{
+    console.log('end');
+}; // Try; Catch; Finally применение.
