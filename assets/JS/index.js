@@ -1,14 +1,9 @@
-const userLanguage = prompt('Select language:en - English ua - Ukreinian')
+const arr = [];
 
-const greetings = new Map([
-    ['en','Hello']
-]);
-  greetings.set('ua','Привет');
-
-  if(gritings.has(userLanguage)) {
-      const massage = greetings.set(userLanguage);
-     
-      alert(massage);
-  } else (
-      alert(greetings.get('en'))
-  ); // Задача на MAP
+function addArray(number) {
+    if(number > 0) {
+        const insertingValue = prompt('Enter string');
+        arr.push(insertingValue);
+        addArray(number - 1)
+    };
+} //Задача на рекурсию для добавления в массив
